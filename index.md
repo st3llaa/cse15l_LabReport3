@@ -26,9 +26,10 @@ The above output demonstrate two examples of running ``` grep -c "<string>" file
 - File:![Image](previous(withPlanes).png) Command Output:![Image](-i-v.png) This example: ``` $ grep -v -i "Planes" ./technical/911report/chapter-1.txt ``` demonstrate removing the word Planes regardless of capitalization (```-i ```). 
 3.   ``` grep -i "<string>" fileName.txt```
 - ![Image](-c.png) The first example demonstrates finding all instnaces of the word "state" regardless of case. The first occurence of "state" was found in all caps but it was still highlighted in the output as this command ignores case. The contents of the file is printed unlike with the ``` grep -c "<string>" fileName.txt ``` command.
-- ![Image](-r-i.png)
-This example: ``` $ grep -r -i "edwarrd" ./technical/government/Media ``` similarly demonstrates a recurrsive call to grep ignoring the case (```-i ```). This example I limited the files to government --> media file in order to produce a smaller output. 
-
+- ![Image](-r-i.png) This example: ``` $ grep -r -i "edwarrd" ./technical/government/Media ``` similarly demonstrates a recurrsive call to grep ignoring the case (```-i ```). This example I limited the files to government --> media file in order to produce a smaller output. 
+4. ``` $ grep -n "<string>" fileName.txt```
+- ![Image](-n.png) This example: ``` $ grep -n "Boston" ./technical/911report/chapter-1.txt ``` demonstrates a searching for "Boston" but instead of printing the file with the found words highlighted, it begins each line of output with its corresponding line number within the file. 
+- ![Image](-i-n.png) This example: ``` $ grep -n -i "gender" ./technical/911report/chapter-1.txt ``` similarly demonstrates searching for "gender" regardless of case (```-i```), the output indicates no such word was found. 
 ---
 ## grep command: alternative commands with similar behavior
 1. ``` ack```
@@ -37,5 +38,6 @@ This command searches for files for a specified pattern but works differently to
 This command is designed to be faster than grep and supports serching through files with certain extensions only
 3. ```sed```
 This command can be used to find and replace text in a file. 
-[DDBeck.com](https://ddbeck.com/better-than-grep-for-writers/)
-[Software Testing Help](https://www.softwaretestinghelp.com/grep-command-in-unix/)
+## Additional Sources:
+- [DDBeck.com](https://ddbeck.com/better-than-grep-for-writers/)
+- [Software Testing Help](https://www.softwaretestinghelp.com/grep-command-in-unix/)
