@@ -13,7 +13,7 @@ This command prefixes each matching line output with the line number in the file
 
 The above commands were found using [chatGTP](https://chat.openai.com/) by typing "grep command line options".
 These were corroborating by checking the command manuel in terminal by typing ``` man grep ```. The output is shown below:
-![Image](man grep.png)
+![Image](manGrep.png)
 
 ## Examples: using grep command line options of ./technical
 
